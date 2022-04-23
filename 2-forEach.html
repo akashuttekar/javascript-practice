@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forEach</title>
+</head>
+
+<body>
+    <div class="demo">
+
+    </div>
+
+    <script>
+        const demo = document.querySelector('.demo');
+        let text = [];
+        const friends = ["amey", "aniket", "gajanan"]; //original
+        const x = friends;
+        x[4] = 'akash uttekar';
+
+        x.forEach((value, index) => {
+            text.push(value)
+            // text += value;//amey aniket gajanan
+            if (index === 2) { //0 1 2
+                text.push('baban')
+            }
+            demo.innerHTML = text;
+        })
+
+        console.log(friends);
+        console.log(x);
+
+        // const demo = document.querySelector('.demo')
+        // const detail = [
+        //     {
+        //         id: 1,
+        //         title: "akash", age: 45
+        //     },
+        //     {
+        //         id: 2,
+        //         title: "aniket", age: 4
+        //     },
+        //     {
+        //         id: 3,
+        //         title: "mahesh", age: 25
+        //     }
+        // ]
+
+        // let text = '';
+        // detail.forEach(value => {
+        //     text += ` <h4>${value.title}</h4> <p>${value.age}</p>`;
+        //     demo.innerHTML = text;
+        // })
+    </script>
+</body>
+
+</html>
