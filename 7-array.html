@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions</title>
+</head>
+
+<body>
+
+    <script>
+        //forEach changes original array
+
+        //array literal
+        const myFriends = ['aniket', 'gajanan', true, false, 45646, { id: 1, title: 'mango', price: 50, myArray: [{ id: 1, title: 'mango', price: 45, }] }];
+        console.log(myFriends[5].myArray.forEach((item) => { console.log(item.title) }));
+        document.write(myFriends[5].title)
+        const myArray = myFriends[5].myArray;
+        delete myFriends[1]
+        myArray.forEach((item) => {
+
+            console.log(item.title);
+        })
+
+        console.log(myFriends.length);
+
+        // const books = ['book1', 'book2', 'bookd3'];
+
+        //array with new keyword
+        const books = new Array('book1', 'book2', 'book3');
+        // console.log(books);
+
+    </script>
+</body>
+
+</html>

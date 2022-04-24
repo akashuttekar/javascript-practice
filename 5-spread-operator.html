@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions</title>
+</head>
+
+<body>
+
+    <script>
+        let name = 'Amey';
+        let surname = 'sawant';
+        let age = 35;
+        let phone = 88888;
+
+        // arrow function
+        const ameyDetails = (name, ...rest) => {
+            document.write(name);
+            document.write(surname);
+            document.write(age);
+            document.write(phone + '<br>');
+            document.write(rest + '<br>')
+            document.write(rest[2] = 9136397429)
+            console.log(rest[2] = 9136397429);
+        }
+
+        ameyDetails(name, surname, age, phone)
+    </script>
+</body>
+
+</html>
